@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Hangman Game v 1.0.</title>
+    <link href="main.css" rel="stylesheet" />
+    <script src="jquery-1.12.0.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <label>Select category: </label>
+      <select id="category">
+        <option value="badminton">Badminton</option>
+        <option value="google">Google</option>
+        <option value="languages">Languages</option>
+      </select>
+      <br />
+      <center><small>by: Abdu Muhaimin</small></center>
+    </header>
+    <center><h1>Welcome to hangman!</h1></center>
+    <center><h3>Press the start button to start the game!</h3></center>
+    <center ><button type="button" id='strt'>Start!</button></center>
+    <center id='game-c' style="display:none;"><canvas id='game' height="400" width="600">Your browser doesn't support the canvas element, please update!</canvas>
+      <br />
+      <button id='rstrt'>Restart</button>
+    </center>
+    <input id='game-i' style="opacity:0;filter:alpha(opacity=0);" type="text" />
+  </body>
+</html>
